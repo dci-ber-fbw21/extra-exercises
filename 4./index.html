@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Dropdown</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        height: 100vh;
+        background-color: mistyrose;
+      }
+      ul {
+        list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      /* .horizontal-list  */
+
+      .menu > li {
+        display: inline;
+        border: 1px solid purple;
+        background-color:rgb(221, 212, 212);
+        padding: 20px;
+      }
+      .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+     
+      /* .vertical-list  */
+
+      .dropdown {
+        position: absolute;
+        padding:10px;
+        visibility: hidden;
+        top: 100%;
+        background-color:rgb(221, 212, 212);
+        
+      }
+      /* ul li ul {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(224, 212, 212);
+              } */
+
+    .menu li:hover {
+        background-color: rgb(131, 118, 118);
+        transition: 0.2s, 0.5s;
+    }
+
+
+    /* important how to get the dropdown after hovering the li  */
+    .menu li:hover .dropdown {
+    visibility: visible;
+        transition: 0.2s, 0.5s;
+      
+    
+    }
+  
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li>Products</li>
+        <li>
+          Company
+          <ul class="dropdown">
+            <li>Team</li>
+            <li>About us</li>
+            <li>Motivation</li>
+          </ul>
+        </li>
+        </li>
+        <li>
+          Contact
+          <ul class="dropdown">
+            <li>Team</li>
+            <li>About us</li>
+            <li>Motivation</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
