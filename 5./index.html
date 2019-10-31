@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Stagger</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      section {
+        background-color: mistyrose;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        position: relative;
+        height: 650px;
+        width: 550px;
+        border: 1px red solid;
+        z-index: 10;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      h1 {
+        position: absolute;
+        top: 10%;
+        margin: 0;
+        padding: 30px;
+        font-weight: 100;
+      }
+      ul {
+        position: absolute;
+        top: 23%;
+        list-style: none;
+        z-index: 20;
+        padding: 15px 30px;
+      }
+      li {
+        padding: 15px 30px;
+        font-size: 1.5em;
+        background-color: rgba(255, 241, 241, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Lorem ipsum dolor sit</h1>
+        <img src="/vincent-romain.jpg" alt="mountain" />
+        <ul>
+          <li>Quaerat similique aperiam?</li>
+          <li>Sit amet consectetur adipisicing</li>
+          <li>Lorem distinctio animi inventore</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
