@@ -10,7 +10,6 @@
       * {
         font-family: sans-serif;
         box-sizing: border-box;
-        font-weight: 100;
         margin: 0;
         padding: 0;
       }
@@ -21,7 +20,7 @@
         align-items: center;
         height: 100vh;
       }
-      div {
+      nav {
         width: 400px;
         background-color: white;
       }
@@ -39,17 +38,20 @@
         position: absolute;
         left: 0px;
         top: 0;
-        background-color: red;
+        /* background-color: red; */
         width: 8px;
         height: 100%;
         display: block;
+      }
+      li::before {
+        transition: width 0.5s;
       }
       li:hover {
         color: white;
       }
       li:hover::before {
-        background-color: red;
-        transition: width 0.5s;
+        /* background-color: red; */
+        /* transition: width 0.5s; */
         width: 100%;
       }
       span {
@@ -73,14 +75,14 @@
   </head>
   <body>
     <section>
-      <div>
+      <nav>
         <ul>
           <li><span>Home</span></li>
           <li><span>About</span></li>
           <li><span>Menu</span></li>
           <li><span>Contact</span></li>
         </ul>
-      </div>
+      </nav>
     </section>
   </body>
 </html>
